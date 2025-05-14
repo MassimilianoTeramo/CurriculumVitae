@@ -1,0 +1,49 @@
+.NavBarCustom {
+  background-color: #282c34;
+  padding: 25px;
+  color: white;
+  width: 70%;
+  margin: 4rem auto;
+    border-radius: 20px;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 2rem !important;
+  gap: 3rem;
+}
+
+
+/*MAIN */
+.buttonMain {
+    background-color: #ffffff !important;
+    color: #282c34 !important;
+    border: 1px solid #282c34 !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 10rem;
+}
+
+.openTo {
+    background-color: transparent !important;
+    border: 1px solid #08d323 !important;
+    color: black !important;
+    border-radius: 5px;
+    font-size: smaller;
+    cursor:default !important;
+}
+.dotOpenTo{
+    color: #08d323 !important;
+}
+
+.toolsBtn{
+    background-color: transparent !important;
+    border: 1px solid black !important;
+    color: black !important;
+    border-radius: 5px;
+    font-size: smaller;
+    cursor:default !important;
+
+}

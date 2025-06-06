@@ -8,6 +8,9 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
+import epicodeLogo from "../Assets/logoEpicode.png";
+import lifeLogo from "../Assets/logo-life-learning.png";
+import uniLogo from "../Assets/uniLogo.png";
 
 const data02 = [
   { x: "Mitek Systems", y: 20 },
@@ -16,6 +19,39 @@ const data02 = [
   { x: 100, y: 100 },
   { x: 120, y: 190 },
 ];
+
+const getIntroOfPage = (label) => {
+  if (label === 'Web Designer / SEO Ass.') {
+    return "Page A is about men's clothing";
+  }
+  if (label === 'Web Designer') {
+    return "Page B is about women's dress";
+  }
+  if (label === 'Web Marketing Ass.') {
+    return "Page C is about women's bag";
+  }
+  if (label === 'Hospitality Industry') {
+    return 'Page D is about household goods';
+  }
+  if (label === 'Mitek Systems') {
+    return 'Page E is about food';
+  }
+  return '';
+};
+
+const CustomTooltip = ({ active, payload }) => {
+  if (active && payload && payload.length) {
+    const label = payload[0].payload.x;
+    return (
+      <div className="custom-tooltip">
+        <p className="label">{`${label}: ${payload[0].payload.y}`}</p>
+        <p className="intro">{getIntroOfPage(label)}</p>
+        <p className="desc">Anything you want can be displayed here.</p>
+      </div>
+    );
+  }
+  return null;
+};
 
 function Career() {
   
@@ -64,7 +100,7 @@ function Career() {
               tickFormatter={tick => tick.toString()}
             />
             <ZAxis type="number" range={[100]} />
-            <Tooltip cursor={{ strokeDasharray: "3 3" }} />
+            <Tooltip cursor={{ strokeDasharray: "3 3" }} content={<CustomTooltip />} />
             <Legend />
             <Scatter
               name="Job Experience"
@@ -76,13 +112,10 @@ function Career() {
         </div>
         <div className="col-md-12 pt-2 d-flex flex-column align-items-center justify-content-center">
           <h2>Education</h2>
-          <ul className="list-unstyled">
-            <li>EPICODE - Bootcamp Full Stack Web Development (2025)</li>
-            <li>Life Learning - Programming and web development (2018) </li>
-            <li>
-              Universitá degli Studi della Tuscia - Master Degree in Business
-              Communication and Marketing (2014)
-            </li>
+          <ul className="list-unstyled mt-4">
+            <li className="mb-2"><div><img src={epicodeLogo} alt="Epicode Logo" className="edLogo"/> <span className="ms-1">- Bootcamp Full Stack Web Development (2025)</span></div></li>
+            <li className="mb-2"><div className="d-flex align-items-center"><img src={lifeLogo} alt="Life Learning Logo" className="edLogo" style={{height:"60px", width:"115px", marginRight:"10px"}}/> <span className="ms-1"> - Programming and web development (2018)</span> </div></li>
+            <li className="mb-2"><div className="d-flex align-items-center"><img src={uniLogo} alt="University Logo" className="edLogo" style={{height:"45px", width:"130px", marginRight:"10px"}}/> <span className="ms-1"> - Master in Business Communication and Marketing(2014)</span> </div></li>
           </ul>
         </div>
       </div>

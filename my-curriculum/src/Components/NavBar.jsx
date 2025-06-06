@@ -12,10 +12,10 @@ function NavBar() {
           Massimiliano Teramo
         </Navbar.Brand>
         <Nav>
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#career">Career</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
-          <Nav.Link href="#hobbies">Hobbies</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/career">Career</Nav.Link>
+          <Nav.Link href="/contact">Contact</Nav.Link>
+          <Nav.Link href="/hobbies">Hobbies</Nav.Link>
           
         </Nav>
       </Container>

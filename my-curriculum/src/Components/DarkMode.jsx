@@ -3,7 +3,7 @@ export const DarkMode = ({ handleChange, isChecked }) => {
     <div className="darkModeToggle">
       
       <input type="checkbox" onChange={handleChange} checked={isChecked} id="check" className="toggle"/>
-      <label htmlFor="check">dark mode</label>
+      <label className="ToggleLabel" htmlFor="check"> {isChecked ? "🌙" : "☀️"}</label>
     </div>
   );
 };

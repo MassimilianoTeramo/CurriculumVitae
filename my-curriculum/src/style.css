@@ -24,10 +24,17 @@
 .toggle + label::before {
     content: "";
     height: 1em;
-    width: 1.7em;
+    width: 2em;
     border-radius: 1em;
     background-color: var(--toggle-bg-color);
     margin-right: 0.5em;
+}
+
+.ToggleLabel::before {
+    content: "☀️";
+}
+.ToggleLabel::after {
+    content: "🌙";
 }
 
 .toggle + label::after {
@@ -37,14 +44,18 @@
     border-radius: 1em;
     background-color: var(--toggle-fg-color);
     position: absolute;
-    left: 0.55em;
+    left: 0.80em;
     transition: background-color 350ms ease-in-out, transform 350ms ease-in-out;
-   
+
 }
 
 .toggle:checked + label::after {
-    transform: translateX(100%);
+    transform: translateX(100%);    
 }
+
+
+
+
 
 .NavBarCustom {
   background-color: var(--foreground-color);
@@ -79,6 +90,11 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 10rem;
 }
 
+.buttonMain:hover {
+    border: 1px solid #08d323 !important;
+    box-shadow: 0 0 12px #08d323  !important;
+}
+
 .openTo {
     background-color: var(--background-color) !important;
     border: 1px solid #08d323 !important;
@@ -94,17 +110,16 @@ p, h1, h2, h3, h4, h5, h6 {
 .toolsBtn{
     background-color: transparent !important;
     border: 1px solid var(--toggle-fg-color) !important;
-    color: var(--toggle-fg-color) !important;
+    color: var(--primary-color) !important;
     border-radius: 5px;
     font-size: smaller;
     cursor:default !important;
 
 }
 .toolsBtn:hover{
-    border: 1px solid #22e409 !important;
+    border: 1px solid #08d323  !important;
     background-color:transparent !important;
-    color: #22e409 !important;
-    box-shadow: 0 0 12px #22e409 !important;
+    box-shadow: 0 0 12px #08d323  !important;
     
 }
 

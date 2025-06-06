@@ -8,6 +8,10 @@ import Main from './Pages/Main';
 import FooterM from './Components/Footer';
 import { useState } from 'react';
 import { DarkMode } from './Components/DarkMode';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Career from './Pages/Career';
+import Hobbies from './Pages/Hobbies';
+
 
 
 function App() {
@@ -18,9 +22,15 @@ function App() {
       <DarkMode handleChange={() => setDarkMode(!darkMode)} isChecked={darkMode} />
 
       <NavBar />
-      <section>
-        <Main />
-      </section>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/Career" element={<Career />} />
+          <Route path="/Contact" element={<Main />} />
+          <Route path="/Hobbies" element={<Hobbies />} />
+        </Routes>
+
+      </BrowserRouter>
       <FooterM />
 
     </div>

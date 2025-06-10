@@ -9,10 +9,16 @@
 }
 
 .custom-tooltip {
-    background-color: white;
+    background-color: var(--background-color);
+    border: 2px solid var(--toggle-fg-color);
+    padding: 15px;
 }
 
 .label {
-    color: var(--primary-color);
+    color: var(--background-color);
     font-weight: bold;
+}
+
+.intro {
+    color: var(--background-color);
 }

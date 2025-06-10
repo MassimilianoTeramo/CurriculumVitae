@@ -97,8 +97,7 @@ function FooterM() {
       </div>
 
       <div className="footer-copyright text-center py-3">
-        © 2020 Copyright:
-        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        © 2025 Copyright: Massimiliano Teramo 
       </div>
     </footer>
   );

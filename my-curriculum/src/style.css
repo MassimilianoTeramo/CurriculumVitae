@@ -123,3 +123,18 @@ p, h1, h2, h3, h4, h5, h6 {
     
 }
 
+.langButton {
+    background-color: transparent  !important;
+    border: 1px solid var(--background-color) !important;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.langButton:hover {
+    border: 1px solid #08d323 !important;
+    box-shadow: 0 0 12px #08d323 !important;
+}
+
+

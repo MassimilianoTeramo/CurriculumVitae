@@ -5,6 +5,7 @@ import './style.css';
 import './Footer.css';
 import './Career.css';
 import './index.css';
+import "country-flag-icons/3x2/flags.css";
 import NavBar from './Components/NavBar';
 import Main from './Pages/Main';
 import ToolsSkills from './Components/ToolsSkills';

@@ -1,0 +1,19 @@
+
+.swiper {
+  transform: translateX(2.7%);
+}
+
+.swiper-wrapper {
+  width: 100%; /* Imposta l'altezza al 100% del contenitore */
+}
+
+.swiper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.myswiper {
+    margin-left: -2.7% !important;
+}

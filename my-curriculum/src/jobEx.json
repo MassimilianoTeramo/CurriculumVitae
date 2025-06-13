@@ -1,0 +1,65 @@
+[
+    {
+        "jobTitle": "Web Designer / Seo Assistant",
+        "company": "emediaweb.it",
+        "location": "Italy",
+        "startDate": "2015",
+        "endDate": "2016",
+        "responsibilities": [
+            "Built and updated websites using HTML and CSS.",
+            "Applied SEO principles to improve Google search visibility.",
+            "Managed e-commerce CMS uploading and editing product images and details using Adobe tools.",
+            "Promoted business by phone, email, and face-to-face.",
+            "Collaborated in the development of a YouTube Channel ('Surprise Toys Eggs')."
+        ]
+    },
+    {
+        "jobTitle": "Web Designer / Commercial Manager",
+        "company": "Digitaly",
+        "location": "Italy",
+        "startDate": "2016",
+        "endDate": "2017",
+        "responsibilities": [
+            "Improved the company website using HTML, CSS, and SEO strategies",
+            "Assisted in basic accounting: managed invoices and client orders",
+            "Analyzed government tenders satisfying all the requirements to partecipate",
+            "Contacted high potential clients by phone and mail to promote our business"
+        ]
+    },
+    {
+        "jobTitle": "Web Marketing Assistant",
+        "company": "SearchPoint UK",
+        "location": "Leeds, UK",
+        "startDate": "2017",
+        "endDate": "2017",
+        "responsibilities": [
+            "Created and managed Google My Business pages, exceeding daily targets.",
+            "Designed logos and backgrounds using GIMP 2.0.",
+            "Developed and implemented marketing strategies to enhance online presence.",
+            "Contributed to content creation and page layout"
+        ]
+    },
+    {
+        "jobTitle": "Hospitality Sector",
+        "company": "DoubleTree by Hilton / Sport Direct",
+        "location": "Leeds, UK",
+        "startDate": "2017",
+        "endDate": "2021",
+        "responsibilities": [
+            "Delivered a high standard of customer service in fast-paced hospitality and retail settings.",
+            "Assisted with guest reception, car park management, and customer satisfaction initiatives"
+        ]
+    },
+    {
+        "jobTitle": "Identity Verification Analyst",
+        "company": "Mitek Systems",
+        "location": "Leeds, UK",
+        "startDate": "2021",
+        "endDate": "Present",
+        "responsibilities": [
+            "Analyze 300 / 400 documents daily to verify proof of identity and address.",
+            "Detect and report fraudulent activity to ensure customer security.",
+            "Contribute to delivering high-quality digital access services."
+        ]
+    }
+]

@@ -11,23 +11,13 @@ import {
 import epicodeLogo from "../Assets/logoEpicode.png";
 import lifeLogo from "../Assets/logo-life-learning.png";
 import uniLogo from "../Assets/uniLogo.png";
+import Experience from "../Components/JobExperience";
 
 
 
 
 function Career() {
   
-  const data = [
-
-    { x: "emediaweb", y: 2015 },
-    { x: "Digitaly", y: 2016 },
-    { x: "SearchPoint Uk", y: 2017 },
-    { x: "Hospitality Industry", y: 2017 },
-    { x: "Mitek Systems", y: 2021 },
-    { x: "Present: Mitek Systems", y: 2025 },
-
-  ];
-
   return (
     <div className="container d-flex flex-column align-items-center justify-content-center">
       <h1 className="text-center mt-5 mb-3">My Career path</h1>
@@ -38,6 +28,7 @@ function Career() {
       <div className="row">
         <div className="col-md-12 mb-5 d-flex flex-column align-items-center justify-content-center">
           <h2 className="mt-4">Professional Experience</h2>
+          <Experience />
 
        {/*  */}
         </div>

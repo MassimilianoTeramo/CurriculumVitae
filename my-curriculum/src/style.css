@@ -137,4 +137,36 @@ p, h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 12px #08d323 !important;
 }
 
+/*CAreer */
+
+
+
+.job-experience {
+    margin-top: 3rem;
+    display: flex;
+    gap: 4rem;
+    width: auto;
+}
+
+.card-experience {
+    border-radius: 10px;
+    padding: 1rem;
+    height: 30vh !important;
+    overflow-y: auto;
+    width: 500px;
+}
+
+.card-experience:hover {
+    box-shadow: 0 0 20px #08d323;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.list-experience{ 
+    margin-top: 1.5rem;
+}
+
+.list-experience li {
+    margin: 0.5rem auto;
+}
+
 

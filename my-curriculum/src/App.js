@@ -1,12 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import './style.css';
 import './Footer.css';
 import './Career.css';
 import './index.css';
 import './Carousel.css';
 import "country-flag-icons/3x2/flags.css";
+import './style.css';
 import NavBar from './Components/NavBar';
 import Main from './Pages/Main';
 import ToolsSkills from './Components/ToolsSkills';

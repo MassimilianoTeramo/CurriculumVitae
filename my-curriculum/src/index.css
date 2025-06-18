@@ -17,6 +17,7 @@ body {
   --secondary-color: #ffffff;
   --toggle-bg-color: #ead04d;
   --toggle-fg-color: #282c34;
+   -webkit-background-image:url("Assets/logoEpicode.png");
 }
 
 [data-theme="dark"] {

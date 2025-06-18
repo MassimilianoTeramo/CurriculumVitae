@@ -133,7 +133,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .langButton:hover {
-    border: 1px solid #08d323 !important;
     box-shadow: 0 0 12px #08d323 !important;
 }
 
@@ -168,5 +167,24 @@ p, h1, h2, h3, h4, h5, h6 {
 .list-experience li {
     margin: 0.5rem auto;
 }
+
+.table-container {
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;    
+}
+.desc {
+    text-align: center !important;
+}
+.table {
+    border-color: 1px solid #ffffff !important;
+    box-shadow: #ffffff 0px 0px 4px !important;
+}
+.table-group-divider {
+    color: rgb(0, 0, 0) !important;
+}
+
+
 
 

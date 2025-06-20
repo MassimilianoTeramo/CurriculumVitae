@@ -10,7 +10,8 @@ import { FaBootstrap } from "react-icons/fa";
 import {saveAs} from 'file-saver';
 
 export function DownloadFile() {
-  const saveFile = () => { saveAs("my-curriculum/src/downloadCV/cv prova.pdf", "CV_Massimiliano_Teramo.pdf"); };
+ 
+  const saveFile = () => { saveAs("/downloadCV/cv-prova.pdf", "CV_Massimiliano_Teramo.pdf"); };
   return (
     <Button className="mt-3 p-3 buttonMain" onClick={saveFile}>
       <MdOutlineFileDownload size={20} className="me-2" />

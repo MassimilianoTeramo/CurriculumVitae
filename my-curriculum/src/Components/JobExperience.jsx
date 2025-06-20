@@ -24,7 +24,7 @@ function Experience(){
           rotate: 0,
           stretch: 3,
           depth: 100,
-          modifier: 2,
+          modifier: 3,
           slideShadows: false,
         }}
         loop={true}
@@ -62,7 +62,7 @@ function Experience(){
                     </Card.Header>
                     <Card.Body>
                          <Card.Text>
-                            <small className="text-muted">From: {job.startDate} To: {job.endDate}</small>
+                            <bold style={{color:"black"}}>From: {job.startDate} To: {job.endDate}</bold>
                         </Card.Text>
                         
                         <Card.Text>

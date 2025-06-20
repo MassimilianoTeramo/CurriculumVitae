@@ -10,6 +10,7 @@ import Form from "react-bootstrap/Form";
 
 import { useState } from "react";
 
+
 function GmailForm() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -81,8 +82,10 @@ function FooterM() {
                   </Button>
                 </Modal.Footer>
               </Modal>
-              <Button className="mb-3 footerLinkedin">
-               
+              <Button className="mb-3 footerLinkedin"
+                href="https://www.linkedin.com/in/massimiliano-teramo"
+              target="_blank"
+              rel="noopener noreferrer">
                   <FaLinkedinIn size={27} />
                
               </Button>

@@ -7,44 +7,63 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
 import { SiCloudinary } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
+import {saveAs} from 'file-saver';
 
-
+export function DownloadFile() {
+  const saveFile = () => { saveAs("my-curriculum/src/downloadCV/cv prova.pdf", "CV_Massimiliano_Teramo.pdf"); };
+  return (
+    <Button className="mt-3 p-3 buttonMain" onClick={saveFile}>
+      <MdOutlineFileDownload size={20} className="me-2" />
+      Download CV
+    </Button>
+  );
+}
 
 const Main = () => {
   return (
     <Container>
       <Row className="my-5 py-5 d-flex justify-content-center">
         <Col md={8} className="text-start px-5">
-            <div className="pb-5 d-flex justify-content-start gap-5 align-items-center">
-          <h1>Hi I'm Max</h1>
-          <Button className="me-2 d-flex align-items-center justify-content-around gap-2 openTo"><GoDotFill className="dotOpenTo"/>
-          OPEN TO WORK</Button>
+          <div className="pb-5 d-flex justify-content-start gap-5 align-items-center">
+            <h1>Hi I'm Max</h1>
+            <Button className="me-2 d-flex align-items-center justify-content-around gap-2 openTo">
+              <GoDotFill className="dotOpenTo" />
+              OPEN TO WORK
+            </Button>
           </div>
-          <p>I am a junior Full-Stack developer, with knowledges in HTML, CSS, Javascript, React, Bootstrap and MongoDB.</p>
-            <p>I'm looking for a job as a Front-End developer, but I'm open to any opportunity to grow professionally.</p>
-            <div className="d-flex justify-content-space-around gap-4 mt-4" >
-            <Button className="mt-3 p-3 buttonMain"> <MdOutlineFileDownload size={20} className="me-2" />
-            Download CV</Button>
-            <Button className="mt-3 p-3 buttonMain"> <FaGithub size={24} /></Button>
+          <p>
+            I am a junior Full-Stack developer, with knowledges in HTML, CSS,
+            Javascript, React, Bootstrap and MongoDB.
+          </p>
+          <p>
+            I'm looking for a job as a Front-End developer, but I'm open to any
+            opportunity to grow professionally.
+          </p>
+          <div className="d-flex justify-content-space-around gap-4 mt-4">
+           <DownloadFile />
+            <Button
+              className="mt-3 p-3 buttonMain"
+              href="https://github.com/MassimilianoTeramo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={24} />
+            </Button>
             <Button className="mt-3 p-3 buttonMain">Contact</Button>
-            </div>
+          </div>
         </Col>
         <Col md={4}>
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: "18rem" }}>
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Website created with React and Bootstrap.
-              </Card.Text>
+              <Card.Text>Website created with React and Bootstrap.</Card.Text>
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
           </Card>
         </Col>
       </Row>
       <hr />
-      
-
     </Container>
   );
-}
+};
 export default Main;

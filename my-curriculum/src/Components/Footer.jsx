@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
@@ -18,6 +20,7 @@ function GmailForm() {
 }
 
 function FooterM() {
+  const navigate = useNavigate();
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
@@ -38,10 +41,14 @@ function FooterM() {
             <h5 className="text-uppercase">Useful Links</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#!">Career</a>
+                <Button variant="link" onClick={() => navigate("/Career")} style={{ padding: 0, color: "#007bff", textDecoration: "underline" }}>
+                  Career
+                </Button>
               </li>
               <li>
-                <a href="#!">Hobbies</a>
+                <Button variant="link" onClick={() => navigate("/Hobbies")} style={{ padding: 0, color: "#007bff", textDecoration: "underline" }}>
+                  Hobbies
+                </Button>
               </li>
             </ul>
           </div>
@@ -55,7 +62,7 @@ function FooterM() {
 
               <Modal show={show} onHide={handleClose}>
                 <Modal.Header>
-                <Modal.Title>Contact Me</Modal.Title>
+                  <Modal.Title>Contact Me</Modal.Title>
                 </Modal.Header>
                 <Form className="p-3">
                   <Form.Group

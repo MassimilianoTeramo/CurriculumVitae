@@ -14,7 +14,7 @@ function Experience(){
     <div className="job-experience">
      <Swiper
         className="myswiper ms-4"
-        initialSlide={3}
+        initialSlide={4}
         modules={[EffectCoverflow, Autoplay]}
         effect={"coverflow"}
         grabCursor={true}

@@ -2,6 +2,7 @@ import epicodeLogo from "../Assets/logoEPIC.png";
 import lifeLogo from "../Assets/logo-life-learning.png";
 import uniLogo from "../Assets/uniLogo.png";
 import Experience from "../Components/JobExperience";
+import Cambridge from "../Assets/firstCambridge.png";
 import { useState } from "react";
 
 function Career() {
@@ -27,8 +28,8 @@ function Career() {
              >
             <thead>
               <tr className="table-dark">
-                <th scope="col">School</th>
-                <th scope="col">year</th>
+                <th scope="col">Institution</th>
+                <th scope="col">Year</th>
                 <th scope="col">Course</th>
               </tr>
             </thead>
@@ -80,6 +81,24 @@ function Career() {
                 <td>2014</td>
                 <td className="desc">
                   Master in Business Communication and Marketing
+                </td>
+              </tr>
+                <tr>
+                <td>
+                  <img
+                    src={Cambridge}
+                    alt="Cambridge Logo"
+                    className="edLogo"
+                    style={{
+                      height: "75px",
+                      width: "130px",
+                      marginRight: "10px",
+                    }}
+                  />
+                </td>
+                <td>2011</td>
+                <td className="desc">
+                 Certificate of English (FCE) - B2 Level
                 </td>
               </tr>
             </tbody>

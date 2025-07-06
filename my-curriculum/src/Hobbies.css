@@ -2,6 +2,7 @@
     width: 20rem;
     height: 30rem;
     margin: 10px 10px;
+    border:1px solid white
 }
 
 .hobbyCard:hover {

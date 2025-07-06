@@ -37,13 +37,20 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="App" data-theme={darkMode ? "dark" : "light"}>
-      <DarkMode
+    
+   <div className="App" data-theme={darkMode ? "dark" : "light"}>
+      <NavBar />
+      <div className="d-flex flex-wrap">
+
+        
+       <DarkMode
         handleChange={() => setDarkMode(!darkMode)}
         isChecked={darkMode}
       />
 
-      <NavBar />
+    </div>
+     
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />

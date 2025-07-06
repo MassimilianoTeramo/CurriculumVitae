@@ -27,7 +27,7 @@ function FooterM() {
   <GmailForm show={show} handleClose={handleClose} />;
 
   return (
-    <footer className="page-footer font-small blue pt-4">
+    <footer className="page-footer font-small blue pt-5">
       <div className="container-fluid text-center text-md-left">
         <div className="row">
           <div className="col-md-4 mt-md-0 mt-3">
@@ -35,18 +35,16 @@ function FooterM() {
             <p>Website created with React and Bootstrap.</p>
           </div>
 
-          <hr className="clearfix w-100 d-md-none pb-0" />
-
-          <div className="col-md-4 mb-md-0 mb-3">
+          <div className="col-md-4 mb-md-0 mb-3 usefulLinks">
             <h5 className="text-uppercase">Useful Links</h5>
             <ul className="list-unstyled">
               <li>
-                <Button variant="link" onClick={() => navigate("/Career")} style={{ padding: 0, color: "#007bff", textDecoration: "underline" }}>
+                <Button variant="link" onClick={() => navigate("/Career")} style={{ padding: 0, color: "var(--primary-color)", textDecoration: "none" }}>
                   Career
                 </Button>
               </li>
               <li>
-                <Button variant="link" onClick={() => navigate("/Hobbies")} style={{ padding: 0, color: "#007bff", textDecoration: "underline" }}>
+                <Button variant="link" onClick={() => navigate("/Hobbies")} style={{ padding: 0, color: "var(--primary-color)", textDecoration: "none" }}>
                   Hobbies
                 </Button>
               </li>

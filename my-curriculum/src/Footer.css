@@ -47,3 +47,10 @@
     border: #08d323 solid 1px !important;
     box-shadow: 0 0 10px #08d323 !important;
 }
+
+@media screen and (max-width: 768px) {
+.usefulLinks {
+    margin-top: 1.5rem !important;
+    
+}
+}

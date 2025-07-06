@@ -1,3 +1,11 @@
+.profEx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 3rem;
+}
+
 .edLogo {
     width:120px;
     height: auto;
@@ -22,3 +30,43 @@
 .intro {
     color: var(--background-color);
 }
+
+.jobExperience-sm {
+    display: none;
+}
+
+@media screen and (max-width: 768px){ 
+    .profEx {
+        margin-bottom: 0 !important;
+    }
+
+    .job-experience {
+        margin-top: 0 !important;
+    }
+    .myswiper {
+        display: none !important;
+    }
+    .jobExperience-sm {
+        display: block !important;
+        margin-top: -8rem !important;
+        font-size: smaller !important;
+        padding: 0 1rem !important;
+    }
+    .card-experience {
+        width: 100% !important;
+        margin: 3rem auto !important;
+        
+    }
+
+    .table-container {
+        font-size: smaller !important;
+    }
+    .edLogo {
+        scale:0.8;
+    }
+    .education {
+        margin-bottom: 3rem !important;
+    }
+
+}
+

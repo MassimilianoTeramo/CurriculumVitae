@@ -4,22 +4,23 @@ import uniLogo from "../Assets/uniLogo.png";
 import Experience from "../Components/JobExperience";
 import Cambridge from "../Assets/firstCambridge.png";
 import { useState } from "react";
+import { Container, Col, Row } from "react-bootstrap";
 
 function Career() {
 
   return (
-    <div className="container d-flex flex-column align-items-center justify-content-center">
+    <Container className="d-flex flex-column align-items-center justify-content-center">
       <h1 className="text-center mt-5 mb-3">My Career path</h1>
       <p className="text-center mb-5">
         Here you can find information about my professional journey, skills, and
         experiences.
       </p>
-      <div className="row">
-        <div className="col-md-12 mb-5 d-flex flex-column align-items-center justify-content-center">
+      <Row>
+        <Col className="profEx col-md-12">
           <h2 className="mt-4">Professional Experience</h2>
           <Experience />
-        </div>
-        <div className="col-md-12 pt-2 d-flex flex-column align-items-center justify-content-center">
+        </Col>
+        <Col className="education col-md-12 mb-5 pt-2 d-flex flex-column align-items-center justify-content-center">
           <h2>Education</h2>
           <div className="table-container">
              <table
@@ -105,9 +106,9 @@ function Career() {
           </table>
           </div>
          
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 export default Career;

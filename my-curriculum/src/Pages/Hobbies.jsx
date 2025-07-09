@@ -6,7 +6,9 @@ import Door from "../Assets/Hobbies/door.jpg";
 import Daft from "../Assets/Hobbies/daft.jpg";
 import Street from "../Assets/Hobbies/street.jpg";
 import Mia from "../Assets/Hobbies/mia.jpg";
-import { Modal, Col, Card } from "react-bootstrap";
+import { Modal, Col, Card, Button } from "react-bootstrap";
+import { RiInstagramFill } from "react-icons/ri";
+
 import { useState } from "react";
 
 const hobbies = [
@@ -106,6 +108,13 @@ function Hobbies() {
           </Modal.Body>
         </Modal>
       )}
+      <hr />
+      <div className="text-center mt-5">
+        <h4>If you want to see more, visit my instagram page:</h4>
+        <Button className="mt-3 BtnInsta" href="https://www.instagram.com/massimiliano_teramo/" target="_blank" rel="noopener noreferrer">
+          <RiInstagramFill className="InstaIcon" size={35}/>
+        </Button>
+        </div>
     </div>
   );
 }

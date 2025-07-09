@@ -62,7 +62,7 @@ const Main = () => {
         <Col
           xs={12}
           md={4}
-          className="mb-4 mb-md-0 d-flex justify-content-center order-1 order-md-2"
+          className="mb-4 mb-md-0 xs-d-none d-flex justify-content-center order-1 order-md-2"
         >
           <Card style={{ width: "18rem" }} className="cardMain">
             <Card.Body>

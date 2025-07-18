@@ -79,19 +79,6 @@ const Main = () => {
             <Button className="p-3 buttonMain" onClick={() => navigate(`/Contact`)}>Contact</Button>
           </div>
         </Col>
-        <Col
-          xs={12}
-          md={4}
-          className="mb-4 mb-md-0 d-flex justify-content-center order-1 order-md-2"
-        >
-          <Card style={{ width: "18rem" }} className="cardMain">
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>Website created with React and Bootstrap.</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </Col>
       </Row>
       <hr />
     </Container>

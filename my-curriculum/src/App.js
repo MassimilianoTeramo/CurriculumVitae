@@ -19,7 +19,10 @@ import Hobbies from "./Pages/Hobbies";
 import { useLocalStorage } from "./useLocalStorage";
 import Contact from "./Pages/Contact";
 
+
+
 function App() {
+ 
   const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
 
   // Recupera la preferenza dal localStorage all'avvio
@@ -51,6 +54,7 @@ function App() {
      
 
       <BrowserRouter>
+
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/Career" element={<Career />} />
@@ -59,6 +63,7 @@ function App() {
         </Routes>
         <ToolsSkills />
         <FooterM />
+
       </BrowserRouter>
     </div>
   );

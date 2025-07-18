@@ -16,3 +16,15 @@
     border-radius: 10px;
     object-fit: cover;
 }
+
+.BtnInsta {
+    background-color:transparent;
+    border: none;
+}
+
+.InstaIcon {
+    color: #b406cf;
+    border: 1px solid #b406cf;
+    border-radius: 25%;
+    padding: 0px;
+}

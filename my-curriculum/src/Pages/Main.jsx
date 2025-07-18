@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export function DownloadFile() {
   const saveFile = () => {
-    saveAs("/downloadCV/cv max 2025.pdf", "CV_Massimiliano_Teramo.pdf");
+    saveAs("/downloadCV/cv-prova.pdf", "CV_Massimiliano_Teramo.pdf");
   };
   return (
     <Button className="buttonMain" onClick={saveFile}>
@@ -78,6 +78,19 @@ const Main = () => {
             </Button>
             <Button className="p-3 buttonMain" onClick={() => navigate(`/Contact`)}>Contact</Button>
           </div>
+        </Col>
+        <Col
+          xs={12}
+          md={4}
+          className="mb-4 mb-md-0 d-flex justify-content-center order-1 order-md-2"
+        >
+          <Card style={{ width: "18rem" }} className="cardMain">
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Text>Website created with React and Bootstrap.</Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
       <hr />

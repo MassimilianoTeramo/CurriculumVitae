@@ -6,25 +6,19 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
-
+import ContactMe from "./EmailJS";
 import { useState } from "react";
+import Contact from "../Pages/Contact";
 
-
-function GmailForm() {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-}
 
 function FooterM() {
   const navigate = useNavigate();
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
-  <GmailForm show={show} handleClose={handleClose} />;
+ 
 
   return (
     <footer className="page-footer font-small blue pt-5">
@@ -36,7 +30,7 @@ function FooterM() {
           </div>
 
           <div className="col-md-4 mb-md-0 mb-3 usefulLinks">
-            <h5 className="text-uppercase">Useful Links</h5>
+            <h5>Useful Links</h5>
             <ul className="list-unstyled">
               <li>
                 <Button variant="link" onClick={() => navigate("/Career")} style={{ padding: 0, color: "var(--primary-color)", textDecoration: "none" }}>
@@ -52,40 +46,20 @@ function FooterM() {
           </div>
 
           <div className="col-md-4 mb-md-0 mb-3">
-            <h5 className="text-uppercase">Contacts</h5>
+            <h5>Contacts</h5>
             <div className="contacts" style={{ color: "black" }}>
               <Button className="my-3 footerButton" onClick={handleShow}>
                 <BiLogoGmail size={27} />
               </Button>
 
               <Modal show={show} onHide={handleClose}>
-                <Modal.Header>
+                <Modal.Header closeButton>
                   <Modal.Title>Contact Me</Modal.Title>
+
                 </Modal.Header>
-                <Form className="p-3">
-                  <Form.Group
-                    className="mb-3"
-                    controlId="exampleForm.ControlTextarea1"
-                  >
-                    <Form.Label>Object</Form.Label>
-                    <Form.Control type="text" rows={3} />
-                  </Form.Group>
-                  <Form.Group
-                    className="mb-3"
-                    controlId="exampleForm.ControlTextarea1"
-                  >
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
-                  </Form.Group>
-                </Form>
-                <Modal.Footer>
-                  <Button variant="secondary" onClick={handleClose}>
-                    Close
-                  </Button>
-                  <Button variant="primary" onClick={handleClose}>
-                    Send
-                  </Button>
-                </Modal.Footer>
+                <Modal.Body>
+               <ContactMe onClose={handleClose}/>
+                </Modal.Body>
               </Modal>
               <Button className="mb-3 footerLinkedin"
                 href="https://www.linkedin.com/in/massimiliano-teramo"
@@ -112,3 +86,4 @@ function FooterM() {
 }
 
 export default FooterM;
+

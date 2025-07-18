@@ -52,20 +52,17 @@ const hobbies = [
   },
 ];
 
-
-
-
 function Hobbies() {
-    const [show, setShow] = useState(false);
-    const [selectedHobby, setSelectedHobby] = useState(null);
-    const handleClose = () => {
-      setShow(false);
-      setSelectedHobby(null);
-    };
-    const handleShow = (hobby) => {
-      setSelectedHobby(hobby);
-      setShow(true);
-    };
+  const [show, setShow] = useState(false);
+  const [selectedHobby, setSelectedHobby] = useState(null);
+  const handleClose = () => {
+    setShow(false);
+    setSelectedHobby(null);
+  };
+  const handleShow = (hobby) => {
+    setSelectedHobby(hobby);
+    setShow(true);
+  };
 
   return (
     <div className="container">
@@ -78,8 +75,13 @@ function Hobbies() {
           <div className="row">
             {hobbies.map((hobby) => (
               <Col key={hobby.id} xs={12} sm={6} md={4} lg={3} className="mb-4">
-                <Card className="mb-3 hobbyCard" >
-                  <Card.Img src={hobby.image} alt={hobby.title} className="hobbyImg" onClick={() => handleShow(hobby)}/>
+                <Card className="mb-3 hobbyCard mx-auto">
+                  <Card.Img
+                    src={hobby.image}
+                    alt={hobby.title}
+                    className="hobbyImg"
+                    onClick={() => handleShow(hobby)}
+                  />
                   <Card.Body>
                     <Card.Title>{hobby.title}</Card.Title>
                   </Card.Body>
@@ -102,7 +104,11 @@ function Hobbies() {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img src={selectedHobby.image} alt={selectedHobby.title} style={{ width: "100%" }} />
+            <img
+              src={selectedHobby.image}
+              alt={selectedHobby.title}
+              style={{ width: "100%" }}
+            />
           </Modal.Body>
         </Modal>
       )}

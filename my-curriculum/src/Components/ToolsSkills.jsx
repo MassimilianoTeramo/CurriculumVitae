@@ -1,7 +1,5 @@
 import { Container, Row, Col, Pagination, Card, Button } from "react-bootstrap";
 import { FaCss3, FaHtml5, FaReact, FaGithub } from "react-icons/fa";
-import { MdOutlineFileDownload } from "react-icons/md";
-import { GoDotFill } from "react-icons/go";
 import { DiJavascript } from "react-icons/di";
 import { BiLogoMongodb } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";

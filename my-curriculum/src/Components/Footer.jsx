@@ -12,13 +12,11 @@ import ContactMe from "./EmailJS";
 import { useState } from "react";
 import Contact from "../Pages/Contact";
 
-
 function FooterM() {
   const navigate = useNavigate();
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
- 
 
   return (
     <footer className="page-footer font-small blue pt-5">
@@ -33,12 +31,28 @@ function FooterM() {
             <h5>Useful Links</h5>
             <ul className="list-unstyled">
               <li>
-                <Button variant="link" onClick={() => navigate("/Career")} style={{ padding: 0, color: "var(--primary-color)", textDecoration: "none" }}>
+                <Button
+                  variant="link"
+                  onClick={() => navigate("/Career")}
+                  style={{
+                    padding: 0,
+                    color: "var(--primary-color)",
+                    textDecoration: "none",
+                  }}
+                >
                   Career
                 </Button>
               </li>
               <li>
-                <Button variant="link" onClick={() => navigate("/Hobbies")} style={{ padding: 0, color: "var(--primary-color)", textDecoration: "none" }}>
+                <Button
+                  variant="link"
+                  onClick={() => navigate("/Hobbies")}
+                  style={{
+                    padding: 0,
+                    color: "var(--primary-color)",
+                    textDecoration: "none",
+                  }}
+                >
                   Hobbies
                 </Button>
               </li>
@@ -55,23 +69,26 @@ function FooterM() {
               <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                   <Modal.Title>Contact Me</Modal.Title>
-
                 </Modal.Header>
                 <Modal.Body>
-               <ContactMe onClose={handleClose}/>
+                  <ContactMe onClose={handleClose} />
                 </Modal.Body>
               </Modal>
-              <Button className="mb-3 footerLinkedin"
+              <Button
+                className="mb-3 footerLinkedin"
                 href="https://www.linkedin.com/in/massimiliano-teramo"
-              target="_blank"
-              rel="noopener noreferrer">
-                  <FaLinkedinIn size={27} />
-               
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn size={27} />
               </Button>
-              <Button className="mb-3 footerGithub">
-                
-                  <TbBrandGithubFilled size={27} />
-                
+              <Button
+                className="mb-3 footerGithub"
+                href="https://github.com/MassimilianoTeramo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TbBrandGithubFilled size={27} />
               </Button>
             </div>
           </div>
@@ -79,11 +96,10 @@ function FooterM() {
       </div>
 
       <div className="footer-copyright text-center py-3">
-        © 2025 Copyright: Massimiliano Teramo 
+        © 2025 Copyright: Massimiliano Teramo
       </div>
     </footer>
   );
 }
 
 export default FooterM;
-

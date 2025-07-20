@@ -6,12 +6,6 @@
     margin-bottom: 3rem;
 }
 
-.edLogo {
-    width:120px;
-    height: auto;
-    background-color: var(--secondary-color);
-}
-
 .list-unstyled {
    color: var(--primary-color);
 }
@@ -61,12 +55,22 @@
     .table-container {
         font-size: smaller !important;
     }
-    .edLogo {
-        scale:0.8;
-    }
+   
     .education {
         margin-bottom: 3rem !important;
     }
 
 }
 
+@media screen and (max-width: 320px) {
+    .jobExperience-sm {
+        font-size: smaller !important;
+        padding: 0 0.5rem !important;
+    }
+   
+    .education {
+        margin: 0 auto !important;
+        width: 90% !important;
+    }
+    
+}

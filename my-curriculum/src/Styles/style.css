@@ -47,7 +47,7 @@
   border-radius: 1em;
   background-color: var(--toggle-fg-color);
   position: absolute;
-  left: 0.8em;
+  left: 0.85em;
   transition: background-color 350ms ease-in-out, transform 350ms ease-in-out;
 }
 

@@ -4,7 +4,7 @@ import uniLogo from "../Assets/uniLogo.png";
 import Experience from "../Components/JobExperience";
 import Cambridge from "../Assets/firstCambridge.png";
 import { useState } from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Table } from "react-bootstrap";
 
 function Career() {
   return (
@@ -22,7 +22,8 @@ function Career() {
         <Col className="education col-md-12 mb-5 pt-2 d-flex flex-column align-items-center justify-content-center">
           <h2>Education</h2>
           <div className="table-container">
-            <table
+            <Table
+              striped bordered hover variant="dark"
               className="table mt-4 w-50 text-center"
               style={{ borderRadius: "6px", overflow: "hidden" }}
             >
@@ -36,11 +37,7 @@ function Career() {
               <tbody className="text-center align-middle">
                 <tr className=" table-group-divider">
                   <td>
-                    <img
-                      src={epicodeLogo}
-                      alt="Epicode Logo"
-                      className="edLogo"
-                    />
+                   <span>EPICODE</span>
                   </td>
                   <td>2025</td>
                   <td className="desc">
@@ -49,16 +46,7 @@ function Career() {
                 </tr>
                 <tr>
                   <td>
-                    <img
-                      src={lifeLogo}
-                      alt="Life Learning Logo"
-                      className="edLogo"
-                      style={{
-                        height: "60px",
-                        width: "115px",
-                        marginRight: "10px",
-                      }}
-                    />
+                   <span>Life Learning</span>
                   </td>
                   <td>2018</td>
                   <td className="desc">
@@ -67,16 +55,7 @@ function Career() {
                 </tr>
                 <tr>
                   <td>
-                    <img
-                      src={uniLogo}
-                      alt="University Logo"
-                      className="edLogo"
-                      style={{
-                        height: "45px",
-                        width: "130px",
-                        marginRight: "10px",
-                      }}
-                    />
+                   <span>Universitá degli Studi della Tuscia</span>
                   </td>
                   <td>2014</td>
                   <td className="desc">
@@ -85,16 +64,7 @@ function Career() {
                 </tr>
                 <tr>
                   <td>
-                    <img
-                      src={Cambridge}
-                      alt="Cambridge Logo"
-                      className="edLogo"
-                      style={{
-                        height: "75px",
-                        width: "130px",
-                        marginRight: "10px",
-                      }}
-                    />
+                   <span>Cambridge Institute</span>
                   </td>
                   <td>2011</td>
                   <td className="desc">
@@ -102,7 +72,7 @@ function Career() {
                   </td>
                 </tr>
               </tbody>
-            </table>
+            </Table>
           </div>
         </Col>
       </Row>

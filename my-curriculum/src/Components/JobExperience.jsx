@@ -16,7 +16,7 @@ function Experience(){
       <div className="job-experience">
         <Swiper
           className="myswiper ms-4"
-          initialSlide={5}
+          initialSlide={4}
           modules={[EffectCoverflow, Autoplay]}
           effect={"coverflow"}
           grabCursor={true}
@@ -24,7 +24,7 @@ function Experience(){
           speed={600}
           coverflowEffect={{
             rotate: 0,
-            stretch: 3,
+            stretch: 7,
             depth: 100,
             modifier: 3,
             slideShadows: false,
@@ -57,7 +57,7 @@ function Experience(){
           {reversedJobs.map((job, index) => (
             <SwiperSlide key={index} className="mb-3">
               <Card key={index} className="mb-3 card-experience p-0">
-                <Card.Header className="bg-dark text-white ">
+                <Card.Header className="bg-dark text-white " style={{ position: "sticky", top: 0 }}>
                   <strong>{job.jobTitle}</strong> <br /> @ {job.company}
                 </Card.Header>
                 <Card.Body>

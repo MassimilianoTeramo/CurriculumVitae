@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .list-unstyled {
@@ -29,18 +29,38 @@
     display: none;
 }
 
-.table {
-    overflow: hidden;
-    width: 100%;
-    border-radius: 6px;
-    margin: 0 auto;
-}
+ 
+
+.education {
+        width: 100% !important;
+        margin: 2.5rem auto !important;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            color: var(--primary-color);
+        }
+    }
+
 
 .table-container {
     margin: 0 auto;
     width: 100%;
     padding: 1rem;
+    max-width: 800px;
 }
+.table {
+    overflow: hidden;
+    width: auto;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+
+
+
 
 @media screen and (max-width: 768px){ 
     .profEx {
@@ -61,21 +81,17 @@
     }
     .card-experience {
         width: 100% !important;
-        margin: 3rem auto !important;
-        
+        margin: 3rem auto !important;  
     }
+
+    .education {
+       margin: 1rem auto !important;
+     }
 
     .table {
         font-size: smaller !important;
-        margin: 0 auto !important;
+        margin: 10px auto !important;
     }
-   
-    .education {
-        margin-bottom: 3rem !important;
-    }
-
-}
-
 @media screen and (max-width: 320px) {
     .jobExperience-sm {
         font-size: smaller !important;
@@ -83,8 +99,7 @@
     }
    
     .education {
-        margin: 0 auto !important;
-        width: 90% !important;
+       scale: 0.9;
     }
-    
+}    
 }

@@ -1,19 +1,18 @@
-
-.swiper {
-  transform: translateX(2.7%);
-}
-
 .swiper-wrapper {
-  width: 100%; /* Imposta l'altezza al 100% del contenitore */
+  width: 100%;
 }
 
 .swiper {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin: 2.5rem auto !important;
+  max-width: 1000px !important;
+  transform: translateX(-4rem) !important;
 }
 
-.myswiper {
-    margin-left: -2.7% !important;
+.jobExperience {
+  width:auto;
+  height: auto;
 }
+

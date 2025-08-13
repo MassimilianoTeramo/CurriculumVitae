@@ -14,20 +14,18 @@ function Career() {
         Here you can find information about my professional journey, skills, and
         experiences.
       </p>
-      <Row>
-        <Col className="profEx col-md-12">
+        <div>
           <h2 className="mt-4">Professional Experience</h2>
+        </div>
+        <Col className="profEx col-12">
           <Experience />
         </Col>
-        <Col
-          xs={12} 
-          className="education mb-5 pt-2 d-flex flex-column align-items-center justify-content-center">
-          <h2>Education</h2>
-          <div className="table-container w-100">
-            <Table
-              striped bordered hover variant="dark"
-              className="table mt-4 w-50 text-center"
-            >
+        <Col xs={12} className="education">
+          <div>
+            <h2>Education</h2>
+          </div>
+          <div className="table-container">
+            <Table striped bordered hover variant="dark" className="table">
               <thead>
                 <tr className="table-dark">
                   <th scope="col">Institution</th>
@@ -76,7 +74,6 @@ function Career() {
             </Table>
           </div>
         </Col>
-      </Row>
     </Container>
   );
 }

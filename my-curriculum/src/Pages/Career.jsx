@@ -19,13 +19,14 @@ function Career() {
           <h2 className="mt-4">Professional Experience</h2>
           <Experience />
         </Col>
-        <Col className="education col-12 mb-5 pt-2 d-flex flex-column align-items-center justify-content-center">
+        <Col
+          xs={12} 
+          className="education mb-5 pt-2 d-flex flex-column align-items-center justify-content-center">
           <h2>Education</h2>
-          <div className="table-container">
+          <div className="table-container w-100">
             <Table
               striped bordered hover variant="dark"
               className="table mt-4 w-50 text-center"
-              style={{ borderRadius: "6px", overflow: "hidden" }}
             >
               <thead>
                 <tr className="table-dark">

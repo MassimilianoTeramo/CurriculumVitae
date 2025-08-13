@@ -29,11 +29,17 @@
     display: none;
 }
 
+.table {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
 .table-container {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     padding: 1rem;
-    border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 768px){ 
@@ -59,8 +65,9 @@
         
     }
 
-    .table-container {
+    .table {
         font-size: smaller !important;
+        margin: 0 auto !important;
     }
    
     .education {

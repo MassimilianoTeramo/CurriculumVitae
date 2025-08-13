@@ -19,7 +19,7 @@ function Career() {
           <h2 className="mt-4">Professional Experience</h2>
           <Experience />
         </Col>
-        <Col className="education col-md-12 mb-5 pt-2 d-flex flex-column align-items-center justify-content-center">
+        <Col className="education col-12 mb-5 pt-2 d-flex flex-column align-items-center justify-content-center">
           <h2>Education</h2>
           <div className="table-container">
             <Table

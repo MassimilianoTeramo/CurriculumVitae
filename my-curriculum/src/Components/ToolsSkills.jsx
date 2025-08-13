@@ -10,6 +10,7 @@ import AD from "../Assets/AD.svg.png";
 import Ill from "../Assets/Ill.svg.png";
 import Pho from "../Assets/Pho.svg.png";
 import Gimp from "../Assets/gimp.svg.png";
+import { BiLogoVisualStudio } from "react-icons/bi";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
@@ -99,6 +100,7 @@ const FrontEndTools = [
   { name: "CSS3", type: "Front-End", icon: <FaCss3 size={35} /> },
   { name: "JavaScript", type: "Front-End", icon: <DiJavascript size={35} /> },
   { name: "Bootstrap", type: "Front-End", icon: <FaBootstrap size={35} /> },
+  { name: "VisualStudio", type: "Front-End", icon: <BiLogoVisualStudio size={35} /> },
 ];
 
 const BackEndTools = [
@@ -166,7 +168,7 @@ const ToolsSkills = () => {
               </div>
             </Col>
             <Col
-              md={6}
+              xs={12} sm={12} md={6} lg={6} xl={6}
               className="d-flex flex-column gap-4 mt-2 justify-content-space-around"
             >
               <h3 className="mt-4">Back-End</h3>

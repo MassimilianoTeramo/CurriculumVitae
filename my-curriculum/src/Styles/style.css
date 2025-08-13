@@ -1,3 +1,4 @@
+/*Dark mode CSS */
 .darkModeToggle {
   top: 20px;
   right: 10px;
@@ -11,14 +12,14 @@
   visibility: hidden;
 }
 
-.toggle + label {
+.toggle+label {
   display: flex;
   align-items: center;
   cursor: pointer;
   color: var(--primary-color);
 }
 
-.toggle + label::before {
+.toggle+label::before {
   content: "";
   height: 1em;
   width: 2em;
@@ -36,11 +37,12 @@
 .ToggleLabel::before {
   content: "☀️";
 }
+
 .ToggleLabel::after {
   content: "🌙";
 }
 
-.toggle + label::after {
+.toggle+label::after {
   content: "";
   height: 1em;
   width: 1em;
@@ -51,7 +53,7 @@
   transition: background-color 350ms ease-in-out, transform 350ms ease-in-out;
 }
 
-.toggle:checked + label::after {
+.toggle:checked+label::after {
   transform: translateX(100%);
 }
 
@@ -62,6 +64,7 @@
   margin: 0 auto;
   border-radius: 20px;
 }
+
 .navbar-nav {
   display: flex;
   justify-content: space-around;
@@ -140,6 +143,7 @@ h6 {
   font-size: smaller;
   cursor: default !important;
 }
+
 .dotOpenTo {
   color: var(--toolsbtn) !important;
 }
@@ -150,6 +154,7 @@ h6 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
+
   .mainTitle {
     flex-direction: column !important;
     align-items: center !important;
@@ -164,9 +169,11 @@ h6 {
     justify-content: center !important;
     margin: 0 auto;
   }
+
   .openTo {
     scale: 0.6;
   }
+
   h1 {
     font-size: 2rem !important;
   }
@@ -176,6 +183,7 @@ h6 {
     margin-bottom: 1.5rem;
     padding: 20px 10px !important;
   }
+
   .cardMain {
     display: none !important;
   }
@@ -189,6 +197,7 @@ h6 {
   font-size: smaller;
   cursor: default !important;
 }
+
 .toolsBtn:hover {
   border: 1px solid var(--toolsbtn) !important;
   background-color: transparent !important;
@@ -205,6 +214,7 @@ h6 {
   padding: 5px;
   border-radius: 5px 0 5px 0px;
 }
+
 .toolLabel2 {
   position: absolute;
   bottom: -60px;
@@ -235,6 +245,7 @@ h6 {
   cursor: pointer;
   font-size: 16px;
 }
+
 .desigButton:hover {
   box-shadow: 0 0 12px var(--toolsbtn) !important;
 }
@@ -260,6 +271,7 @@ hr {
     gap: 0.6rem;
     scale: 0.8;
   }
+
   hr {
     margin: 0.5rem !important;
   }
@@ -274,6 +286,7 @@ hr {
   width: auto;
   height: 100%;
 }
+
 @media screen and (max-width: 768px) {
   .job-experience {
     scale: 0.8;
@@ -306,15 +319,27 @@ hr {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin: 2rem auto;
 }
+
 .desc {
   text-align: center !important;
 }
+
 .table {
   border-color: 1px solid #ffffff !important;
   box-shadow: #ffffff 0px 0px 4px !important;
 }
+
 .table-group-divider {
   color: rgb(0, 0, 0) !important;
+}
+
+
+@media screen and (max-width: 400px) {
+  .table {
+    width: 100% !important;
+    font-size: 0.8rem !important;
+    margin: 0 auto !important;
+  }
 }

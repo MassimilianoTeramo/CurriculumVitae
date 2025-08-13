@@ -1,3 +1,10 @@
+.projectsRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .projectCard {
   background-color: var(--secondary-color);
   border: 1px solid var(--background-color);
@@ -21,13 +28,25 @@
    padding: 0.8rem 1rem;
    border-radius: 0.6rem;
    cursor: pointer;
-   margin-top: 1rem;
 }
 
 .projectsBtn:hover {
     color: var(--toggle-fg-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--toggle-fg-color) !important;
+}
+
+.projectGithub {
+    color: var(--primary-color) !important;
+    padding: 0;
+    background-color: transparent !important;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.projectGithub:hover {
+    color: var(--toggle-fg-color) !important;
+    box-shadow: 0 0 5px var(--toolsbtn) !important;
 }
 
 @media screen and (max-width: 320px) {

@@ -1,0 +1,37 @@
+.projectCard {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--background-color);
+  color: var(--primary-color);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 1.5rem auto;
+  width: 25rem;
+  overflow: hidden;
+}
+
+.card-body{
+    margin: 1.5rem auto;
+}
+
+.projectsBtn {
+   background: #626262;
+   background: linear-gradient(165deg,rgb(74, 74, 74) 0%, rgba(25, 25, 25, 0.922) 50%, rgba(34, 34, 34, 0.852) 100%);
+   border: 1px solid rgb(91, 91, 91) !important;
+   color: white;
+   padding: 0.8rem 1rem;
+   border-radius: 0.6rem;
+   cursor: pointer;
+   margin-top: 1rem;
+}
+
+.projectCard:hover {
+  box-shadow: 0 1px 2px var(--card-borderbox-color);
+  transform: scale(1.2);
+  transition: all 0.8s ease-in-out;
+}
+
+.projectsBtn:hover {
+    color: var(--toggle-fg-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--toggle-fg-color) !important;
+}

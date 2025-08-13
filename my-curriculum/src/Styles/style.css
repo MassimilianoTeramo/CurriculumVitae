@@ -117,8 +117,8 @@ h6 {
 }
 
 .buttonMain:hover {
-  border: 1px solid #08d323 !important;
-  box-shadow: 0 0 12px #08d323 !important;
+  border: 1px solid var(--toolsbtn) !important;
+  box-shadow: 0 0 12px var(--toolsbtn) !important;
 }
 
 
@@ -134,14 +134,14 @@ h6 {
 
 .openTo {
   background-color: var(--background-color) !important;
-  border: 1px solid #08d323 !important;
+  border: 1px solid var(--toolsbtn) !important;
   color: var(--foreground-color) !important;
   border-radius: 5px;
   font-size: smaller;
   cursor: default !important;
 }
 .dotOpenTo {
-  color: #08d323 !important;
+  color: var(--toolsbtn) !important;
 }
 
 @media screen and (max-width: 750px) {
@@ -190,9 +190,9 @@ h6 {
   cursor: default !important;
 }
 .toolsBtn:hover {
-  border: 1px solid #08d323 !important;
+  border: 1px solid var(--toolsbtn) !important;
   background-color: transparent !important;
-  box-shadow: 0 0 12px #08d323 !important;
+  box-shadow: 0 0 12px var(--toolsbtn) !important;
 }
 
 .toolLabel {
@@ -225,7 +225,7 @@ h6 {
 }
 
 .langButton:hover {
-  box-shadow: 0 0 12px #08d323 !important;
+  box-shadow: 0 0 12px var(--toolsbtn) !important;
 }
 
 .desigButton {
@@ -236,7 +236,7 @@ h6 {
   font-size: 16px;
 }
 .desigButton:hover {
-  box-shadow: 0 0 12px #08d323 !important;
+  box-shadow: 0 0 12px var(--toolsbtn) !important;
 }
 
 hr {
@@ -290,7 +290,7 @@ hr {
 }
 
 .card-experience:hover {
-  box-shadow: 0 0 20px #08d323;
+  box-shadow: 0 0 20px var(--toolsbtn);
   transition: box-shadow 0.3s ease-in-out;
 }
 

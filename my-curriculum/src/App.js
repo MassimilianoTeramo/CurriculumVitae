@@ -6,6 +6,7 @@ import "./Styles/Career.css";
 import "./Styles/Footer.css";
 import "./Styles/index.css";
 import "./Styles/style.css";
+import "./Styles/Projects.css";
 import "./Styles/App.css";
 import NavBar from "./Components/NavBar";
 import Main from "./Pages/Main";
@@ -18,6 +19,7 @@ import Career from "./Pages/Career";
 import Hobbies from "./Pages/Hobbies";
 import { useLocalStorage } from "./useLocalStorage";
 import Contact from "./Pages/Contact";
+import Projects from "./Pages/Projects";
 
 
 
@@ -58,6 +60,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/Career" element={<Career />} />
+          <Route path="/Projects" element={<Projects />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Hobbies" element={<Hobbies />} />
         </Routes>

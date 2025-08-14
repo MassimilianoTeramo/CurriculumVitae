@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export function DownloadFile() {
   const saveFile = () => {
-    saveAs("/downloadCV/MTCV.pdf", "CV_Massimiliano_Teramo.pdf");
+    saveAs("/downloadCV/Resume-Massimiliano-Teramo.pdf", "CV_Massimiliano_Teramo.pdf");
   };
   return (
     <Button className="buttonMain" onClick={saveFile}>

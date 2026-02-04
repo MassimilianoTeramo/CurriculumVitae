@@ -1,6 +1,7 @@
 import { Modal, Col, Card, Button, Container, Row } from "react-bootstrap";
 import CapstoneImage from "../Assets/Projects/CapstoneImg.png";
 import BlogImage from "../Assets/Projects/BlogImg.png";
+import RestaurantImage from "../Assets/Projects/restaurant.png";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -18,7 +19,15 @@ const projects = [
         image: BlogImage,
         link: "https://blog-epicode-2.vercel.app/",
         gitHubLink: "https://github.com/MassimilianoTeramo/Blog-Epicode-2.git",
-    }
+    },
+    {
+        title: "Restaurant Website",
+        description: "A modern, responsive restaurant website built with cutting-edge web technologies, featuring seamless user experience and professional design.",
+        image: RestaurantImage,
+        link: "https://my-restaurant-ruddy.vercel.app/",
+        gitHubLink: "https://github.com/MassimilianoTeramo/MyRestaurant.git",
+    },
+
 ]
 
 function Projects() {

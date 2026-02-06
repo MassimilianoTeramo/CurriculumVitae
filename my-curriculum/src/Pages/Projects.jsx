@@ -15,19 +15,18 @@ const projects = [
     },
     {
         title: "Blog",
-        description: "A blog application built with React and Node.js, allowing users to create, read, update, and delete posts.",
+        description: "A blog application built in React and Node.js, allowing users (once logged in) to create, read, update, and delete posts and comments.",
         image: BlogImage,
         link: "https://blog-epicode-2.vercel.app/",
         gitHubLink: "https://github.com/MassimilianoTeramo/Blog-Epicode-2.git",
     },
     {
         title: "Restaurant Website",
-        description: "A modern, responsive restaurant website built with cutting-edge web technologies, featuring seamless user experience and professional design.",
+        description: "A modern, responsive restaurant website built in React and Node.js, featuring seamless user experience and professional design.",
         image: RestaurantImage,
         link: "https://my-restaurant-ruddy.vercel.app/",
         gitHubLink: "https://github.com/MassimilianoTeramo/MyRestaurant.git",
-    },
-
+    }
 ]
 
 function Projects() {

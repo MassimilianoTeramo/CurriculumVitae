@@ -33,7 +33,7 @@ const projects = [
         description: "A pantry management application built with React and Node.js, allowing users to track and manage their pantry items efficiently.",
         image: myPantry,
         link: "https://dispensa-app-rho.vercel.app/",
-        gitHubLink: "https://github.com/MassimilianoTeramo/MyECommerceSite.git",
+        gitHubLink: "https://github.com/MassimilianoTeramo/dispensa-app.git",
     }
 ]
 

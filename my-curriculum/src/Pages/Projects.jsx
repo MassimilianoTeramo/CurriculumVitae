@@ -1,6 +1,8 @@
 import { Modal, Col, Card, Button, Container, Row } from "react-bootstrap";
 import CapstoneImage from "../Assets/Projects/CapstoneImg.png";
 import BlogImage from "../Assets/Projects/BlogImg.png";
+import myRestaurant from "../Assets/Projects/myRestaurant.png";
+import myPantry from "../Assets/Projects/myPantry.png";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -18,6 +20,20 @@ const projects = [
         image: BlogImage,
         link: "https://blog-epicode-2.vercel.app/",
         gitHubLink: "https://github.com/MassimilianoTeramo/Blog-Epicode-2.git",
+    },
+    {
+        title: "Restaurant Website",
+        description: "A modern, responsive restaurant website built in React and Node.js, featuring seamless user experience and professional design.",
+        image: myRestaurant,
+        link: "https://my-restaurant-ruddy.vercel.app/",
+        gitHubLink: "https://github.com/MassimilianoTeramo/MyRestaurant.git",
+    },
+    {
+        title: "My Pantry",
+        description: "A pantry management application built with React and Node.js, allowing users to track and manage their pantry items efficiently.",
+        image: myPantry,
+        link: "https://dispensa-app-rho.vercel.app/",
+        gitHubLink: "https://github.com/MassimilianoTeramo/MyECommerceSite.git",
     }
 ]
 

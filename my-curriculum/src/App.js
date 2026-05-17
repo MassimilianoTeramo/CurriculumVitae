@@ -20,6 +20,7 @@ import Hobbies from "./Pages/Hobbies";
 import { useLocalStorage } from "./useLocalStorage";
 import Contact from "./Pages/Contact";
 import Projects from "./Pages/Projects";
+import Policy from "./Pages/Policy";
 
 
 
@@ -63,6 +64,7 @@ function App() {
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Hobbies" element={<Hobbies />} />
+          <Route path="/policy" element={<Policy />} />
         </Routes>
         <ToolsSkills />
         <FooterM />
